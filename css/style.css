@@ -20,7 +20,7 @@ body {
 }
 .everything {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -107,8 +107,8 @@ a {
   height: 100px;
   position: relative;
   right: 90px;
-  transition: right 0.5s;
-  -webkit-transition: right 0.5s;
+  transition: right 2s;
+  -webkit-transition: right 2s;
   visibility: hidden;
 }
 
