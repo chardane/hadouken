@@ -1,0 +1,111 @@
+/*
+*
+* The original tutorial can be found here:
+* https://www.thinkful.com/learn/intro-to-jquery
+*
+* The difference is, I used CSS animations instead of jQuery,
+* and added some flair like the stage and the text.
+* Enjoy.
+*
+* Ryu and Hadouken are trademarks of Capcom.
+* http://www.capcom.com/
+*
+*/
+
+/* Some setup for the stage background and the explanatory text.*/
+
+body {
+  background: black;
+  font-family: Racing Sans One;
+}
+.everything {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.stage {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  background: url(https://i.imgur.com/b0m2bx0.jpg);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+span {
+  font-size: 60px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  margin-top: 10%;
+  -webkit-animation-iteration-count: 3;
+  -moz-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+}
+
+.reference {
+  font-size: 40px;
+  text-align: center;
+  color: #f1b24b;
+}
+
+a {
+  color: #d68438;
+  text-decoration: none;
+}
+
+/**************************
+*
+* Now, the fun begins!
+*
+***************************/
+
+.fighter div {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.fighter {
+  position: absolute;
+  bottom: 30px;
+  left: 45%;
+  overflow: auto;
+  width: 600px;
+}
+
+.ryu {
+  background-image:url(https://i.imgur.com/90Mmdcm.png);
+  width:205px;
+  height:198px;
+}
+
+.dancing{
+  background-image:url(https://i.imgur.com/nTj3Fxx.gif);
+}
+
+.pose{
+  background-image:url(https://i.imgur.com/Rfj0a80.png);
+}
+
+.hidden {
+  display: none;
+}
+
+.hadouken {
+  background: url(https://i.imgur.com/oTyQRvX.gif) no-repeat;
+  width: 62px;
+  height: 100px;
+  position: relative;
+  right: 90px;
+  transition: right 0.5s;
+  -webkit-transition: right 0.5s;
+  visibility: hidden;
+}
+
+.fire {
+  right: -400px;
+  visibility: visible;
+}
